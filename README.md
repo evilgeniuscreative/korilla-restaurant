@@ -17,7 +17,7 @@ Use this template to structure your READMEs for labs.
 
 1. Fork and clone this repository.
 1. Change into the new directory.
-1. Install dependencies.
+1. Install dependencies (`npm install`).
 1. Fulfill the listed requirements.
 
 ## Requirements
@@ -120,7 +120,7 @@ Then go into the receipt data and change a paid value to true, then verify that 
 
 Obviously we don't want to have to modify our code every time we get a new receipt. Let's instead put all the receipt data in an array and then map over it to render the output.
 
-Update your code so it renders the same, but instead of hard coding 3 receipts, it maps over the array.
+Update your code so it renders the same, but instead of hard coding 3 receipts, it maps over the array. You still want the receipts to display if they're unpaid, and hide if they are paid.
 
 <details>
   <summary>
@@ -177,19 +177,21 @@ const receipts = [
 ]
 ```
 
+
 </details>
 
-## Bonus
+
+## Part 4: Hide on click
 
 Add a click event on the receipt that changes the value of paid from false to true. Once clicked the receipt should immediately disappear from the browser view.
 
-You'll have to research on your own...
+## Bonus
 
-How do you style react components, programmatically, from within react?
+Implement a search field that allows you to search by person. The search should automatically update as you type, hiding every receipt that doesn't match the name you're spelling out. It should display receipts that are both paid and not paid.
 
-[A nice place to start](https://codeburst.io/4-four-ways-to-style-react-components-ac6f323da822)
+You'll have to research on your own to figure out how to approach this. 
 
-But also, [why style components...rather than use a good old css file?](https://medium.com/@perezpriego7/css-evolution-from-css-sass-bem-css-modules-to-styled-components-d4c1da3a659b)
+Hint: Think about how the search will work. How do you make something happen when typing? What needs to happen?
 
 
 ## Plagiarism
