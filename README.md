@@ -7,7 +7,6 @@ Korilla is a Korean barbecue taco truck that makes thousands of hungry customers
 Their CEO is thinking of updating their short order tracking system using React.
 
 Build a prototype of this short order receipts tracker.
-Use this template to structure your READMEs for labs.
 
 ## Prerequisites
 
@@ -90,7 +89,7 @@ class App extends React.Component {
 }
 ```
 
-Make a Receipt component that renders the first receipt's:
+Make a Receipt component that renders the following data from the first receipt:
 
 - person
 - order
@@ -103,7 +102,7 @@ Make a Receipt component that renders the first receipt's:
 
 **Optional:** render the toppings
 
-Add the next two receipts to state and make two more `Receipt` components so that you get a view like this (some css has been implemented already for you)
+Add the next two receipts to state and make two more `Receipt` components so that you get a view like this. Some css has been implemented already for you, take a look at class names in the various css files.
 
 ![korilla receipts rendered Mark](https://i.imgur.com/27V4KW8.png)
 
@@ -176,23 +175,32 @@ const receipts = [
   }
 ]
 ```
-
-
 </details>
 
 
-## Part 4: Hide on click
+## Part 4: Add receipts
 
-Add a click event on the receipt that changes the value of paid from false to true. Once clicked the receipt should immediately disappear from the browser view.
+Add a form that allows you to enter more receipts.
+The form should have a field for each value, and a "submit" button which updates the state.
 
-## Bonus
+You have the choice between making the form fields [controlled components](https://reactjs.org/docs/forms.html) or [uncontrolled components](https://reactjs.org/docs/uncontrolled-components.html). There is no right answer. Look at both and see which one makes more sense.
+
+Because there are a lot of fields, try to avoid making an event listener for each input individually. See if you can make one event listener handle all of them.
+
+Note that the toppings field is an array. To save some complexity, limit yourself to 3 toppings, and therefore 3 fields.
+
+
+## Bonus 1
+
+Instead of harcoding the toppings fields and limiting yourself to 3, add some buttons that will increase and decrease the number of toppings fields. This will allow you to dynamically add an unlimited number of toppings!
+
+## Bonus 2
 
 Implement a search field that allows you to search by person. The search should automatically update as you type, hiding every receipt that doesn't match the name you're spelling out. It should display receipts that are both paid and not paid.
 
 You'll have to research on your own to figure out how to approach this. 
 
-Hint: Think about how the search will work. How do you make something happen when typing? What needs to happen?
-
+Hint: Think about how the search will work. How do you make something happen when typing? What needs to happen? What values are you comparing?
 
 ## Plagiarism
 
