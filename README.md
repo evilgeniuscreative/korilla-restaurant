@@ -107,13 +107,13 @@ Add the next two receipts to state and make two more `Receipt` components so tha
 ![korilla receipts rendered Mark](https://i.imgur.com/27V4KW8.png)
 
 
-## Part 2: Conditionally Render the receipts if they have been paid or not
+## Part 2: Conditionally render the receipts
 
 Right now, all the receipts are not paid.
 
-Modify your render function in App.js to only render a component if the receipt has  been paid.
+Modify your render function in App.js to only render a component if the receipt has not been paid.
 
-Then go into the receipt data and change a paid value to true, then verify that the receipt doesn't render.
+Then go into the receipt data and change a paid value to true, then verify that the receipt disappears.
 
 ## Part 3: Refactor for Dynamic Rendering
 
