@@ -182,6 +182,32 @@ name you're spelling out.
 Hint: Think about how the search will work. How do you make something happen
 while typing? What needs to happen? What values are you searching and comparing?
 
+## Part 5: Add Testing Coverage 
+
+In your Korilla app, install the required testing dependencies using `yarn` or `npm`. 
+
+```
+$ yarn add enzyme enzyme-adapter-react-16 react-test-renderer
+```
+
+```
+$ npm install enzyme enzyme-adapter-react-16 react-test-renderer
+```
+
+Configure your testing setup in `setupTests.js`.
+```javascript
+import { configure } from 'enzyme';
+import Adapter from 'enzyme-adapter-react-16';
+
+configure({ adapter: new Adapter() });
+```
+
+At this point, running `npm test` or `yarn test` should result in one passing test from `App.test.js`. 
+
+Create testing files for your React components, and write at least one test per file. 
+
+Be sure to refer back to the Jest/Enzyme testing lesson repo for examples of tests to incorporate into your Korilla app! 
+
 ## Plagiarism
 
 Take a moment to refamiliarize yourself with the
