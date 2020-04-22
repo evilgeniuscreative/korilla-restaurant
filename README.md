@@ -194,7 +194,7 @@ $ yarn add enzyme enzyme-adapter-react-16 react-test-renderer
 $ npm install enzyme enzyme-adapter-react-16 react-test-renderer
 ```
 
-Configure your testing setup in `setupTests.js`.
+Create a file `setupTests.js`. Configure your testing setup in `setupTests.js`.
 ```javascript
 import { configure } from 'enzyme';
 import Adapter from 'enzyme-adapter-react-16';
