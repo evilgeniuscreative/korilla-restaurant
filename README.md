@@ -1,5 +1,7 @@
 [![General Assembly Logo](https://camo.githubusercontent.com/1a91b05b8f4d44b5bbfb83abac2b0996d8e26c92/687474703a2f2f692e696d6775722e636f6d2f6b6538555354712e706e67)](https://generalassemb.ly/education/web-development-immersive)
 
+## SEIR 1130 January 6th, 2021
+
 # Korilla React Receipts
 
 Korilla is a Korean barbecue taco truck that makes thousands of hungry customers
@@ -34,24 +36,24 @@ You'll be rendering some sample receipts:
 const initialState = [
   {
     id: 1,
-    person: 'Karolin',
+    person: 'Jeremy',
     order: {
       main: 'Burrito',
-      protein: 'Organic Tofu',
+      protein: 'Skirt Steak',
       rice: 'Purple Rice',
       sauce: 'Green Crack',
       toppings: ['Baby Bok Choy', 'Cucumber Kimchi'],
-      drink: 'Korchata',
+      drink: 'Thai Iced Tea',
       cost: 22,
     },
     paid: false,
   },
   {
     id: 2,
-    person: 'Jerrica',
+    person: 'Will',
     order: {
       main: 'Rice Bowl',
-      protein: 'Ginger Soy Chix',
+      protein: 'Ginger Chicken',
       rice: 'Sticky Rice',
       sauce: 'Korilla',
       toppings: ['Yuzu Pickled Sweet Pepper', 'Kale'],
@@ -62,7 +64,7 @@ const initialState = [
   },
   {
     id: 3,
-    person: 'Matt',
+    person: 'Elektra',
     order: {
       main: 'Salad Bowl',
       protein: 'Organic Tofu',
