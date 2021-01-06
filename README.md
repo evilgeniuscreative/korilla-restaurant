@@ -114,6 +114,8 @@ the receipt disappears.
 
 Obviously we don't want to have to manually update the data to show that it is paid. Make a function that updates the paid property in state to be true when the receipt is clicked.
 
+## Bonus
+
 ## Part 4: Searching for receipts
 
 Implement a search field that allows you to search by person. The search should
