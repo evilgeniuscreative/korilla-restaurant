@@ -34,7 +34,7 @@ You'll be rendering some sample receipts:
 const initialState = [
   {
     id: 1,
-    person: 'Jeremy',
+    person: 'Billie',
     order: {
       main: 'Burrito',
       protein: 'Skirt Steak',
@@ -62,7 +62,7 @@ const initialState = [
   },
   {
     id: 3,
-    person: 'Elektra',
+    person: 'Paresh',
     order: {
       main: 'Salad Bowl',
       protein: 'Organic Tofu',
