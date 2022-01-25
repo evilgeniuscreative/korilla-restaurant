@@ -48,7 +48,7 @@ const initialState = [
   },
   {
     id: 2,
-    person: 'Will',
+    person: 'Matt',
     order: {
       main: 'Rice Bowl',
       protein: 'Ginger Chicken',
