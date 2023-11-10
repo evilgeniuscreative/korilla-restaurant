@@ -1,45 +1,46 @@
-import React from 'react';
-import './App.css';
+import React, { useState } from "react";
+import "./App.css";
+import Recipts from "./components/Receipts";
 
 const initialState = [
   {
     id: 1,
-    person: 'Karolin',
+    person: "Karolin",
     order: {
-      main: 'Burrito',
-      protein: 'Organic Tofu',
-      rice: 'Purple Rice',
-      sauce: 'Green Crack',
-      toppings: ['Baby Bok Choy', 'Cucumber Kimchi'],
-      drink: 'Korchata',
+      main: "Burrito",
+      protein: "Organic Tofu",
+      rice: "Purple Rice",
+      sauce: "Green Crack",
+      toppings: ["Baby Bok Choy", "Cucumber Kimchi"],
+      drink: "Korchata",
       cost: 22,
     },
     paid: false,
   },
   {
     id: 2,
-    person: 'Jerrica',
+    person: "Jerrica",
     order: {
-      main: 'Rice Bowl',
-      protein: 'Ginger Soy Chix',
-      rice: 'Sticky Rice',
-      sauce: 'Korilla',
-      toppings: ['Yuzu Pickled Sweet Pepper', 'Kale'],
-      drink: 'Korchata',
+      main: "Rice Bowl",
+      protein: "Ginger Soy Chix",
+      rice: "Sticky Rice",
+      sauce: "Korilla",
+      toppings: ["Yuzu Pickled Sweet Pepper", "Kale"],
+      drink: "Korchata",
       cost: 19,
     },
     paid: false,
   },
   {
     id: 3,
-    person: 'Matt',
+    person: "Matt",
     order: {
-      main: 'Salad Bowl',
-      protein: 'Organic Tofu',
-      rice: 'none',
+      main: "Salad Bowl",
+      protein: "Organic Tofu",
+      rice: "none",
       sauce: "K'lla",
-      toppings: ['Blue Potato Salad', 'Pico De Gallo', 'Red Kimchi'],
-      drink: 'Sparkling Blood Orange Soda',
+      toppings: ["Blue Potato Salad", "Pico De Gallo", "Red Kimchi"],
+      drink: "Sparkling Blood Orange Soda",
       cost: 20,
     },
     paid: false,
@@ -50,9 +51,11 @@ function App() {
   return (
     <>
       <header>
-        <h1 className="name">Korilla</h1>
+        <h1 className='name'>Korilla</h1>
       </header>
-      <main></main>
+      <main>
+        <Recipts initialState={initialState} />
+      </main>
     </>
   );
 }
