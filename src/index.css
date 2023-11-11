@@ -22,6 +22,10 @@ h2 span {
   margin-left: -55px;
   margin-right: 5px;
 }
+
+.paid {
+  display: none;
+}
 .receipts {
   display: flex;
   flex-direction: row;
@@ -31,6 +35,7 @@ h2 span {
 }
 .receipt {
   background: url(./img/paper.jpg);
+  cursor: pointer;
   flex-basis: 250px;
 }
 .receipt header {
@@ -52,4 +57,12 @@ h2 span {
   text-align: center;
   margin: 0;
   padding: 0 0 5px 0;
+}
+
+.yes {
+  color: rgb(87, 141, 87);
+}
+.no {
+  color: rgb(141, 87, 87);
+  font-weight: 700;
 }

@@ -1,8 +1,14 @@
 import React from "react";
 
-export default function Receipt({ receipt }) {
+export default function Receipt({ receipt, handleClick }) {
   return (
-    <article className='receipt'>
+    <article
+      className='receipt'
+      key={receipt.id}
+      onClick={() => {
+        handleClick(receipt.id);
+      }}
+    >
       <header>
         <h2>
           <span>Guest:</span>
@@ -23,14 +29,14 @@ export default function Receipt({ receipt }) {
         <p>
           <strong>Sauce:</strong> {receipt.order.sauce}
         </p>
-        <p>
+        <div>
           <strong>Toppings:</strong>
           <ul className='toppings'>
             {receipt.order.toppings.map((topping) => {
-              return <li> {topping}</li>;
+              return <li key={Math.random() * 55}> {topping}</li>;
             })}
           </ul>
-        </p>
+        </div>
         <p>
           <strong>Drink:</strong> {receipt.order.drink}
         </p>
@@ -38,7 +44,7 @@ export default function Receipt({ receipt }) {
           <strong>Cost:</strong> ${receipt.order.cost}
         </p>
         <p>
-          <strong>Paid:</strong> {receipt.paid}
+          <strong>Paid:</strong> {receipt.paid ? <span className='yes'>Yes</span> : <span className='no'>No</span>}
         </p>
       </section>
     </article>

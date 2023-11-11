@@ -1,6 +1,48 @@
-const addToState = [
+const receiptData = [
   {
     id: 1,
+    person: "Karolin",
+    order: {
+      main: "Burrito",
+      protein: "Organic Tofu",
+      rice: "Purple Rice",
+      sauce: "Green Crack",
+      toppings: ["BabyBok Choy", "Cucumber Kimchi"],
+      drink: "Korchata",
+      cost: 22,
+    },
+    paid: false,
+  },
+  {
+    id: 2,
+    person: "Jerrica",
+    order: {
+      main: "Rice Bowl",
+      protein: "Ginger Soy Chix",
+      rice: "Sticky Rice",
+      sauce: "Korilla",
+      toppings: ["Yuzu Pickled Sweet Pepper", "Kale"],
+      drink: "Korchata",
+      cost: 19,
+    },
+    paid: false,
+  },
+  {
+    id: 3,
+    person: "Matt",
+    order: {
+      main: "Salad Bowl",
+      protein: "Organic Tofu",
+      rice: "none",
+      sauce: "K'lla",
+      toppings: ["Blue Potato Salad", "Pico De Gallo", "Red Kimchi"],
+      drink: "Sparkling Blood Orange Soda",
+      cost: 20,
+    },
+    paid: false,
+  },
+  {
+    id: 4,
     person: "Billie",
     order: {
       main: "Burrito",
@@ -14,7 +56,7 @@ const addToState = [
     paid: false,
   },
   {
-    id: 2,
+    id: 5,
     person: "Will",
     order: {
       main: "Rice Bowl",
@@ -28,7 +70,7 @@ const addToState = [
     paid: false,
   },
   {
-    id: 3,
+    id: 6,
     person: "Paresh",
     order: {
       main: "Salad Bowl",
@@ -39,8 +81,8 @@ const addToState = [
       drink: "Sparkling Blood Orange Soda",
       cost: 20,
     },
-    paid: false,
+    paid: true,
   },
 ];
 
-export default addToState;
+export default receiptData;
