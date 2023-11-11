@@ -1,28 +1,24 @@
-import React, { useState } from "react";
-import "./App.css";
-import Recipts from "./components/Receipts";
-
-const initialState = [
+const addToState = [
   {
     id: 1,
-    person: "Karolin",
+    person: "Billie",
     order: {
       main: "Burrito",
-      protein: "Organic Tofu",
+      protein: "Skirt Steak",
       rice: "Purple Rice",
       sauce: "Green Crack",
       toppings: ["Baby Bok Choy", "Cucumber Kimchi"],
-      drink: "Korchata",
+      drink: "Thai Iced Tea",
       cost: 22,
     },
     paid: false,
   },
   {
     id: 2,
-    person: "Jerrica",
+    person: "Will",
     order: {
       main: "Rice Bowl",
-      protein: "Ginger Soy Chix",
+      protein: "Ginger Chicken",
       rice: "Sticky Rice",
       sauce: "Korilla",
       toppings: ["Yuzu Pickled Sweet Pepper", "Kale"],
@@ -33,7 +29,7 @@ const initialState = [
   },
   {
     id: 3,
-    person: "Matt",
+    person: "Paresh",
     order: {
       main: "Salad Bowl",
       protein: "Organic Tofu",
@@ -47,14 +43,4 @@ const initialState = [
   },
 ];
 
-function App() {
-  return (
-    <>
-      <main>
-        <Recipts initialState={initialState} />
-      </main>
-    </>
-  );
-}
-
-export default App;
+export default addToState;

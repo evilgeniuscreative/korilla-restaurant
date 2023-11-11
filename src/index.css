@@ -1,4 +1,43 @@
 body {
-  margin: 0;
+  background: url(./img/korilla.webp) no-repeat left top fixed;
+  background-size: cover;
   font-family: sans-serif;
+  margin: 0;
+}
+
+h1,
+h2,
+h3 {
+  text-align: center;
+}
+h1 {
+  font-size: 60px;
+  margin: 0;
+  padding: 0;
+}
+.receipts {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 40px;
+  justify-content: center;
+}
+.receipt {
+  background: url(./img/paper.jpg);
+  flex-basis: 250px;
+}
+.receipt header {
+  background: rgba(87, 141, 87, 0.5);
+}
+.receipt h2 {
+  margin: 0 0 5px 0;
+  padding: 20px;
+}
+.receipt section {
+  padding: 5px 20px;
+}
+.toppings {
+  margin: 5px 0;
+  padding: 0 20px 0 30px;
+  font-size: 90%;
 }
