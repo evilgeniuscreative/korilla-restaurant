@@ -1,43 +1,44 @@
 import React from "react";
 
-export default function Receipt({ id, person, order, paid }) {
+export default function Receipt({ receipt }) {
   return (
     <article className='receipt'>
       <header>
         <h2>
-          <strong>Guest: </strong>
-          {person} {id}
+          <span>Guest:</span>
+          {receipt.person}
         </h2>
+        <p className='visit'>Visit: {receipt.id}</p>
       </header>
       <section>
         <p>
-          <strong>Main:</strong> {order.main}
+          <strong>Main:</strong> {receipt.order.main}
         </p>
         <p>
-          <strong> Protein:</strong> {order.protein}
+          <strong> Protein:</strong> {receipt.order.protein}
         </p>
         <p>
-          <strong>Rice:</strong> {order.rice}
+          <strong>Rice:</strong> {receipt.order.rice}
         </p>
         <p>
-          <strong>Sauce:</strong> {order.sauce}
+          <strong>Sauce:</strong> {receipt.order.sauce}
         </p>
         <p>
           <strong>Toppings:</strong>
           <ul className='toppings'>
-            {order.toppings.map((topping) => {
+            {receipt.order.toppings.map((topping) => {
               return <li> {topping}</li>;
             })}
           </ul>
         </p>
         <p>
-          <strong>Drink:</strong> {order.drink}
+          <strong>Drink:</strong> {receipt.order.drink}
         </p>
         <p>
-          <strong>Cost:</strong> ${order.cost}
+          <strong>Cost:</strong> ${receipt.order.cost}
         </p>
         <p>
-          <strong>Paid:</strong> {paid}
+          <strong>Paid:</strong> {receipt.paid}
         </p>
       </section>
     </article>
