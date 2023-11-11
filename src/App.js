@@ -11,7 +11,7 @@ const initialState = [
       protein: "Organic Tofu",
       rice: "Purple Rice",
       sauce: "Green Crack",
-      toppings: ["Baby Bok Choy", "Cucumber Kimchi"],
+      toppings: ["BabyBok Choy", "Cucumber Kimchi"],
       drink: "Korchata",
       cost: 22,
     },
