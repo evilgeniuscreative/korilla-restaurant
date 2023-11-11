@@ -6,8 +6,14 @@ export default function Receipts(props) {
 
   const handleClick = (id) => {
     console.log("handledClick", id);
-    
-    return null;
+    const newReceipts = receipts.map((receipt) => {
+      if (receipt.id === id) {
+        receipt.paid = !receipt.paid;
+      }
+      return receipt;
+    });
+    console.log("newReceipt", newReceipts);
+    return setReceipts(newReceipts);
   };
 
   return (

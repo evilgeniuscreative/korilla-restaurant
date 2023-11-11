@@ -81,7 +81,7 @@ const receiptData = [
       drink: "Sparkling Blood Orange Soda",
       cost: 20,
     },
-    paid: true,
+    paid: false,
   },
 ];
 
