@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 
 export default function Search(props) {
   let matching = [];
@@ -6,6 +6,8 @@ export default function Search(props) {
   const handleFocus = (e) => {
     document.querySelector("#search").placeholder = "";
   };
+
+
 
   return (
     <section className='searchSection'>
