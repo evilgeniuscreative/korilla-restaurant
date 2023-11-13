@@ -23,6 +23,11 @@ h2 span {
   margin-right: 5px;
 }
 
+.main-header {
+  background: rgba(255, 255, 255, 0.2);
+  padding: 20px;
+}
+
 .paid {
   display: none;
 }
@@ -74,10 +79,12 @@ h2 span {
 }
 .searchSection {
   text-align: center;
+  background: rgba(255, 255, 255, 0.2);
 }
 #search {
   font-size: 22px;
-  margin: 5px auto 30px auto;
+  margin: 0 auto 30px auto;
   padding: 5px;
-  width: 50%;
+  text-align: center;
+  width: 85%;
 }

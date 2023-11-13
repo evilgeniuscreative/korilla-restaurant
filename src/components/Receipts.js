@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 import Receipt from "./Receipt";
 import Search from "./Search";
 
@@ -50,9 +50,9 @@ export default function Receipts(props) {
 
   return (
     <section>
-      <header>
-        <h1>Korilla Restaurant</h1>
-        <h2>We've got the receipts</h2>
+      <header className='main-header'>
+        <h1>Killa Gorilla Korilla Restaurant</h1>
+        <h2>Look out cuz we've got the receipts</h2>
       </header>
       <Search receipts={receipts} handleSearchKeyDown={handleSearchKeyDown} />
       <section className='receipts'>
