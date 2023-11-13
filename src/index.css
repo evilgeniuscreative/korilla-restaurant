@@ -66,3 +66,18 @@ h2 span {
   color: rgb(141, 87, 87);
   font-weight: 700;
 }
+
+.searchLabel {
+  left: -10000px;
+  position: absolute;
+  z-index: -1;
+}
+.searchSection {
+  text-align: center;
+}
+#search {
+  font-size: 22px;
+  margin: 5px auto 30px auto;
+  padding: 5px;
+  width: 50%;
+}

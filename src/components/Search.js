@@ -1,23 +1,18 @@
 import React from "react";
 
-export default function Search() {
-  const handleKeyDown = (e) => {
-    // on each keypress, check items for match via search
-    if (e.key === "Enter") {
-      console.log("e.key", e.key);
-      return null;
-    }
+export default function Search(props) {
+  let matching = [];
 
-    const handleSearch = () => {
-      // search for names that match search query in data
-      return null;
-    };
-
-    return (
-      <section id='search'>
-        <input type='text' />
-        <button>Search</button>
-      </section>
-    );
+  const handleFocus = (e) => {
+    document.querySelector("#search").placeholder = "";
   };
+
+  return (
+    <section className='searchSection'>
+      <label className='searchLabel' htmlFor='search'>
+        Search Receipts
+      </label>
+      <input type='text' id='search' onFocus={handleFocus} onChange={props.handleSearchKeyDown} placeholder='Search for a receipt by name' />
+    </section>
+  );
 }

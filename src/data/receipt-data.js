@@ -29,7 +29,7 @@ const receiptData = [
   },
   {
     id: 3,
-    person: "Matt",
+    person: "Katt",
     order: {
       main: "Salad Bowl",
       protein: "Organic Tofu",
