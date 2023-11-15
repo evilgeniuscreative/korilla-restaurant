@@ -13,13 +13,6 @@ Build a prototype of this short order receipts tracker.
 
 - React
 
-## Instructions
-
-1. Fork and clone this repository.
-1. Change into the new directory.
-1. Install dependencies (`npm i` or `npm install`).
-1. Check out to a new branch with `git checkout -b dev`.
-1. Fulfill the listed requirements.
 
 ## Requirements
 
