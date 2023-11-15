@@ -5,7 +5,7 @@ import Search from "./Search";
 export default function Receipts(props) {
   const [receipts, setReceipts] = useState(props.initialState);
   const [lastLength, setLastLength] = useState(0);
-
+  console.log("receipts", receipts);
   // handleClick is passed to Receipt components as a prop, "lifted"
   const handleClick = (id) => {
     console.log("handledClick", id);
